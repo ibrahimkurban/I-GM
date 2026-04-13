@@ -1,0 +1,103 @@
+
+===========================================
+
+1 - logsitic regression kappa_f == kappa_E
+
+===========================================
+paper descr : variable name = value
+------- dimensions----------------
+n : state_dim = 1e3
+N : sample_dim = 1e3
+num of nonzero : hidden_dim = 50
+d : eq_dim = 250
+r : rank = 200 -> null_dim = 50
+
+
+------- constants----------------
+L       : L = 1e3
+m       : m = 1e-2
+sig_1   : sig_upper = 1e1
+sig_r   : sig_lower = 1e-4
+
+
+singular value profile : singular_value_profile = 'step'
+
+experiments: experiment_1051_061125
+
+
+===========================================
+
+2 - logsitic regresion kappa_f << kappa_E
+
+===========================================
+paper descr : variable name = value
+------- dimensions----------------
+n : state_dim = 1e3
+N : sample_dim = 1e3
+num of nonzero : hidden_dim = 50
+d : eq_dim = 250
+r : rank = 200 -> null_dim = 50
+
+
+------- constants----------------
+L       : L = 1e1
+m       : m = 1e-2
+sig_1   : sig_upper = 1e1
+sig_r   : sig_lower = 1e-4
+
+
+singular value profile : singular_value_profile = 'exp_decay'
+
+experiments: experiment_1139_061125
+
+
+===========================================
+
+3 - sparse recnstruction kappa_f << kappa_E
+
+===========================================
+paper descr : variable name = value
+------- dimensions----------------
+n : state_dim = 1e3
+N : sample_dim = 1e3
+num of nonzero : hidden_dim = 50
+d : eq_dim = 250
+r : rank = 200 -> null_dim = 50
+
+
+------- constants----------------
+L       : L = 1e1
+m       : m = 1e-2
+sig_1   : sig_upper = 1e2
+sig_r   : sig_lower = 1e-3
+
+
+singular value profile : singular_value_profile = 'exp-decay'
+
+experiments: experiment_1155_061125
+
+
+===========================================
+
+3 - sparse recnstruction kappa_f == kappa_E
+
+===========================================
+paper descr : variable name = value
+------- dimensions----------------
+n : state_dim = 1e3
+N : sample_dim = 1e3
+num of nonzero : hidden_dim = 50
+d : eq_dim = 250
+r : rank = 200 -> null_dim = 50
+
+
+------- constants----------------
+L       : L = 1e4
+m       : m = 1e-1
+sig_1   : sig_upper = 1e2
+sig_r   : sig_lower = 1e-3
+
+
+singular value profile : singular_value_profile = 'step'
+
+experiments: experiment_1227_061125
